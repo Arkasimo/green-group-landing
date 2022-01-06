@@ -161,40 +161,35 @@ select {
 input {
   outline: none;
 }
-.footer {
-
- padding: 90px 20px 90px 20px;
-  font-size: 16px;
+footer {
+  padding: 90px 20px;
+  font-size: 16px;  
   font-weight: 600;
 }
-.footer_container {
+.footer__container {
   display: flex;
-   flex-direction: row;
-   justify-content: center;
- 
-
+  justify-content: center;
 }
 .footer__copyright {
-  margin-top: 40px;
   text-align: center;
   opacity: 0.5;
+  margin-top: 40px;
 }
+
 .footer__group {
   
   margin-right: 80px;
 }
-h3 {
+footer h3 {
   font-size: 16px;
   opacity: 0.7;
-  padding-bottom: 30px;
+  margin-bottom: 30px; 
 }
 .footer__links {
   display: flex;
- flex-direction: column;
-
- margin-bottom: 15px;
- margin-top: 15px;
- 
- 
- 
+  flex-direction: column;
+}
+.footer__links a {
+   margin-bottom: 15px;
+    
 }
