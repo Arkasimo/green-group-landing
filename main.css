@@ -3,6 +3,10 @@ display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    background-color: #fff;
+    top: 0;
+    z-index: 1;
     }
 body {
     font-family: 'Raleway', sans-serif;
@@ -49,7 +53,7 @@ body {
   .about__sun—image {
     width: 110px;
     height: 110px;
-    margin-bottom: 300px;
+    position:absolute;
 
     }
   .about{
@@ -83,6 +87,7 @@ body {
   
   .about__info {
     max-width: 550px;
+    animation-duration: 2s;
   }
   .form_container {
     width: 550px;
@@ -192,4 +197,137 @@ footer h3 {
 .footer__links a {
    margin-bottom: 15px;
     
+}
+
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.about__sun—image{
+  animation: linear;
+  animation-name: rotation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 720px) {
+  .features {
+      padding: 50px 10px;
+  }
+
+  .cards {
+      grid-template-columns: auto;
+  }
+
+  .features__feedback {
+      flex-direction: column;
+  }
+
+  .features__feedback-left {
+      margin-right: 0;
+  }
+
+  .features__feedback-left h2, .features__box h3 {
+      font-size: 36px;
+  }
+
+  .features__feedback-right {
+      flex-direction: column;
+      align-items: initial;
+  }
+
+  .features__savings-box {
+      margin-right: 0;
+      margin-bottom: 30px;
+  }
+  .promo {
+      flex-direction: column-reverse;
+  }
+
+  .promo__right {
+      padding: 50px 10px;
+  }
+
+  .promo__image {
+      width: 100%;
+      height: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+      padding: 115px 20px;
+  }
+
+  .about h1 {
+      font-size: 36px;
+      line-height: 40px;
+  }
+
+  .about__image {
+      width: 280px;
+  }
+
+  .about__sun-image {
+      width: 75px;
+      height: 75px;
+  }
+}
+
+@media (max-width: 720px) {
+  header {
+      padding: 10px;
+  }
+
+  .header__logo {
+      height: 20px;
+  }
+
+  header a {
+      margin-right: 10px;
+  }
+
+  .about {
+      flex-direction: column-reverse;
+      padding: 50px 10px;
+  }
+
+  .about h1 {
+      font-size: 36px;
+      line-height: 40px;
+  }
+
+  .about__image {
+      width: 280px;
+  }
+
+  .about__sun-image {
+      width: 75px;
+      height: 75px;
+  }
+
+  .form {
+      padding: 50px 10px;
+  }
+
+  .form h1 {
+      font-size: 36px;
+  }
+
+  footer {
+      padding: 50px 10px;
+  }
+
+  .footer__container {
+      flex-direction: column;
+  }
+   .animate__fadeInRight{ 
+     animation-duration: 2s;
+     animation-timing-function: 1;
+   }
 }
