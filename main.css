@@ -65,6 +65,7 @@ header {
         background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
   }
     
   .about h1 {
@@ -524,4 +525,10 @@ header {
    margin-top: 115px;
    margin-left: 60px;
    margin-right: 60px;
+ }
+ .orb-canvas{
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 100%;
  }
