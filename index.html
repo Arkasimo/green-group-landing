@@ -109,9 +109,9 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
           </div>
         </section>
       </section>
-     <section class="form" >  
-        <div class="form_container">
-          <h1>Оставьте свои контакты.</h1>
+      <section class="form" id="form">
+        <div class="form__containter">
+          <h1>Оставьте свои контакты</h1>
           <p><span type="bold">Поможем подобрать модель.
             <br>
              Выбрать удобный вариант доставки и установки.</span>
@@ -132,22 +132,26 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
                <div class="form__group">
                 <label placeholder="Примерный бютжет">Выберите вариант</label>
                 
+              </div>
+              <div class="form__group">
+               
                 <select id="budget">                
                
                   <option value=""> Примерный бюджет</option>
                 <option value="10-30"> 10000Р -30000Р</option>
                 <option value="30-60"> 30000Р -60000Р</option>
                 <option value="60-100"> 60000Р -100000Р</option>
-                <option value="100+"> 100000Р -30000Р</option>
+                <option value="other"> другое</option>
               </select>
+              </div>
               
             </div>
             <br>
-            <button class=form__submit>Отправить заявку    </button>
-             </form>
+            <button type="submit" class="form__submit">
+              Отправить заявку
+            </button>
+          </form>
         </div>
-        
-       
       </section>
       <footer>
         <div class="footer__container">
